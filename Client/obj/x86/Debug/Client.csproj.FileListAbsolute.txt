@@ -1,0 +1,135 @@
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Client.xr.xml
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\resources.pri
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\AppxManifest.xml
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Core\Client.exe
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Client.build.appxrecipe
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\System.Runtime.dll
+C:\Users\jospu\Desktop\Client\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\App.g.i.cs
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\App.g.cs
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\MainPage.g.cs
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\App.xaml
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\MainPage.xaml
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\Client.csproj.CopyComplete
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\priconfig.xml
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\unfiltered.layout.resfiles
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\filtered.layout.resfiles
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\filtered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\excluded.layout.resfiles
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\excluded.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\resources.resfiles
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\pri.resfiles
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\qualifiers.txt
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\jospu\Desktop\Client\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638316334480000000.json
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Client.xr.xml
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\resources.pri
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\AppxManifest.xml
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Core\Client.exe
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Client.build.appxrecipe
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\System.Runtime.dll
+C:\Users\jospu\Desktop\PSP\Client\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\App.g.i.cs
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\App.g.cs
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\MainPage.g.cs
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\App.xaml
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\MainPage.xaml
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\Client.csproj.CopyComplete
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\priconfig.xml
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\unfiltered.layout.resfiles
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\filtered.layout.resfiles
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\filtered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\excluded.layout.resfiles
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\excluded.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\resources.resfiles
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\pri.resfiles
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\qualifiers.txt
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\jospu\Desktop\PSP\Client\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638316334480000000.json
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Client.xr.xml
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\resources.pri
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\AppxManifest.xml
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Core\Client.exe
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Client.build.appxrecipe
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\System.Runtime.dll
+C:\Users\jospu\Desktop\PSP V1\Client\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\App.g.i.cs
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\App.g.cs
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\MainPage.g.cs
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\App.xaml
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\MainPage.xaml
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\App.xbf
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\MainPage.xbf
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\Client.csproj.CopyComplete
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\Client.exe
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\Client.pdb
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\priconfig.xml
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\unfiltered.layout.resfiles
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\filtered.layout.resfiles
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\filtered.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\excluded.layout.resfiles
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\excluded.layout.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\resources.resfiles
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\pri.resfiles
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\qualifiers.txt
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\jospu\Desktop\PSP V1\Client\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638316334480000000.json
