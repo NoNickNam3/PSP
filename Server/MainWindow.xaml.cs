@@ -25,10 +25,13 @@ namespace Server
             InitializeComponent();
             btnStartServer.Click += StartServer;
             lvLog.ItemsSource = LogMessages;
+            cmbMode.ItemsSource = new List<String>() {"DES", "INVENT" };
+            cmbMode.SelectedIndex = 0;
         }
 
         private void StartServer(object sender, RoutedEventArgs e)
         {
+            cmbMode.IsEnabled = false;
             Thread serverThread = new Thread(StartTcpServer);
             serverThread.Start();
         }
@@ -74,6 +77,7 @@ namespace Server
 
             try
             {
+                EnviarResposta("MODE1");
                 while (true)
                 {
                     if (stream.DataAvailable)
@@ -90,7 +94,7 @@ namespace Server
                                 ComprovarMida(LogMessages);
                                 LogMessages.Add($"Mensaje recibido: {data}");
                             });
-                            EnviarResposta(stream, data);
+                            EnviarResposta(data);
                         }
                     }
                 }
@@ -112,7 +116,7 @@ namespace Server
             }
         }
 
-        private static void EnviarResposta(NetworkStream stream, string data)
+        private static void EnviarResposta(string data)
         {
             byte[] responseBytes = Encoding.ASCII.GetBytes(data + "\n");
             byte[] sizePrefix = BitConverter.GetBytes(responseBytes.Length);

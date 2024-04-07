@@ -35,6 +35,22 @@ namespace Client2
         {
             this.InitializeComponent();
             InitAll();
+            ConectarAsync();
+        }
+
+        private async Task ConectarAsync()
+        {
+            if (socket == null || !IsSocketConnected(socket))
+            {
+                socket = new StreamSocket();
+                await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
+                var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
+                DataWriter writer = new DataWriter(socket.OutputStream);
+                writer.WriteString(ConfigurarText("Connexio Realitzada!"));
+                await writer.StoreAsync();
+                writer.DetachStream();
+                writer.Dispose();
+            }
         }
 
         private void InitAll()
@@ -45,7 +61,7 @@ namespace Client2
             cmbTipusConnexio.SelectedIndex = 0;
             llUsuaris = new List<string> { "USUARI 1", "USUARI 2", "USUARI 3" };
             cmbUsers.ItemsSource = llUsuaris;
-            cmbUsers.SelectedIndex = 0;
+            cmbUsers.SelectedIndex = 1;
         }
 
         private async void BtnSend_Click(object sender, RoutedEventArgs e)

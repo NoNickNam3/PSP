@@ -18,6 +18,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
+        <ComboBox x:Name="cmbMode" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" />
         <ListView x:Name="lvLog" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="50" />
         <Button x:Name="btnStartServer" Content="START SERVER" Grid.Column="2" Grid.Row="2" />
 

@@ -32,6 +32,17 @@ namespace Client
         {
             this.InitializeComponent();
             InitAll();
+            ConectarAsync();
+        }
+
+        private async Task ConectarAsync()
+        {
+            if (socket == null || !IsSocketConnected(socket))
+            {
+                socket = new StreamSocket();
+                await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
+                var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
+            }
         }
 
         private void InitAll()
@@ -40,6 +51,7 @@ namespace Client
             llTipusCon = new List<string> { "DES", "INVENTAT" };
             cmbTipusConnexio.ItemsSource = llTipusCon;
             cmbTipusConnexio.SelectedIndex = 0;
+            cmbTipusConnexio.IsEnabled = false;
             llUsuaris = new List<string> { "USUARI 1", "USUARI 2", "USUARI 3" };
             cmbUsers.ItemsSource = llUsuaris;
             cmbUsers.SelectedIndex = 0;
@@ -146,6 +158,11 @@ namespace Client
             {
                 return missatge;
             }
+            if (missatge.Contains("MODE"))
+            {
+                cmbTipusConnexio.SelectedIndex = Int32.Parse(missatge.Substring(4));
+                return "";
+            }
             if ("DES".Equals(cmbTipusConnexio.SelectedItem.ToString()))
             {
                 using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
@@ -212,9 +229,13 @@ namespace Client
                         {
                             lvMessages.Items.RemoveAt(0);
                         }
-
-                        lvMessages.Items.Add(DesencriptarMissatge(message));
-                        txbInput.Text = "";
+                        String msg = DesencriptarMissatge(message);
+                        if (!msg.Equals(""))
+                        {
+                            lvMessages.Items.Add(msg);
+                            txbInput.Text = "";
+                        }
+                        
                     });
                 }
             }
