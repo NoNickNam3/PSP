@@ -15,7 +15,6 @@ using System.Collections.Concurrent;
 
 namespace Server
 {
-
     public partial class MainWindow : Window
     {
         public static ObservableCollection<string> LogMessages { get; set; } = new ObservableCollection<string>();
@@ -38,29 +37,20 @@ namespace Server
         {
             try
             {
-                // Establecer la dirección IP y el puerto para el servidor
                 IPAddress localAddr = IPAddress.Parse("127.0.0.1");
                 int port = 8090;
-
-                // Crear el TcpListener
                 TcpListener server = new TcpListener(localAddr, port);
-
-                // Iniciar el TcpListener
                 server.Start();
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     ComprovarMida(LogMessages);
                     LogMessages.Add($"Servidor escuchando en {localAddr}:{port}");
                 });
-                Console.WriteLine($"Servidor escuchando en {localAddr}:{port}");
 
-                // Bucle infinito para aceptar clientes
                 while (true)
                 {
-                    Console.WriteLine("Esperando por conexiones...");
                     TcpClient client = server.AcceptTcpClient();
                     clients.Add(client);
-                    Console.WriteLine("Conexión aceptada.");
                     Application.Current.Dispatcher.Invoke(() =>
                     {
                         ComprovarMida(LogMessages);
@@ -72,7 +62,6 @@ namespace Server
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Error: {e.Message}");
             }
         }
 
@@ -85,15 +74,14 @@ namespace Server
 
             try
             {
-                while (true) // Mantener la conexión abierta
+                while (true)
                 {
-                    if (stream.DataAvailable) // Verifica si hay datos para leer
+                    if (stream.DataAvailable)
                     {
                         byte[] bytes = new byte[256];
                         string data = null;
 
                         int i;
-                        // Bucle para recibir todos los datos enviados por el cliente
                         while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                         {
                             data = Encoding.ASCII.GetString(bytes, 0, i);
@@ -102,7 +90,6 @@ namespace Server
                                 ComprovarMida(LogMessages);
                                 LogMessages.Add($"Mensaje recibido: {data}");
                             });
-                            Console.WriteLine($"Mensaje recibido: {data}");
                             EnviarResposta(stream, data);
                         }
                     }
@@ -110,7 +97,6 @@ namespace Server
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Error en la conexión: {e.Message}");
             }
             finally
             {
@@ -140,20 +126,14 @@ namespace Server
                     try
                     {
                         NetworkStream clientStream = client.GetStream();
-                        // Enviar tamaño del mensaje
                         clientStream.Write(sizePrefix, 0, sizePrefix.Length);
-                        // Enviar mensaje
                         clientStream.Write(responseBytes, 0, responseBytes.Length);
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine($"Error al enviar respuesta: {e.Message}");
-                        // Considera remover al cliente de 'clients' si no está más conectado
                     }
                 }
             }
-            Console.WriteLine("Respuesta enviada a todos los clientes.");
         }
-
     }
 }

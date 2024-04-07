@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-07T16:38:02.149</Modified>
+      <Modified>2024-04-07T17:38:26.621</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\Client.exe">
       <PackagePath>entrypoint\Client.exe</PackagePath>
-      <Modified>2024-04-07T16:38:01.586</Modified>
+      <Modified>2024-04-07T17:38:26.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -90,11 +90,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-04-07T16:38:01.524</Modified>
+      <Modified>2024-04-07T17:38:25.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-04-07T16:38:01.524</Modified>
+      <Modified>2024-04-07T17:38:25.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +102,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-05T19:04:20.031</Modified>
+      <Modified>2024-04-07T16:50:36.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client\bin\x86\Debug\Core\Client.exe">
       <PackagePath>Client.exe</PackagePath>
-      <Modified>2024-04-07T16:38:02.146</Modified>
+      <Modified>2024-04-07T17:38:26.618</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

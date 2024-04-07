@@ -1,0 +1,1 @@
+C:\Users\jospu\Desktop\PSP V2\Client\Client.csproj;x86
