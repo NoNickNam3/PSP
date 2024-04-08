@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>NONICKNAM3</Machine>
+    <Machine>NONICK-LAPTOP</Machine>
     <WindowsUser>jospu</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>077b41f4-cfd0-4783-a71c-d7d0188f2b40</PackageIdentityName>
     <PackageIdentityPublisher>CN=jospu</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\jospu\Desktop\PSP V2\Client2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>678ED824A10EF264F054271A313B3731F514E253B65C88D1AC6AAE72586CF6BB</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>B3E1C751F8BD34C161A019090BCF04E22B6EBE1C0CF0F8E99ED35763F0C96E6F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>077b41f4-cfd0-4783-a71c-d7d0188f2b40_1.0.0.0_x86__bxhdr4p0a9vjp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>077b41f4-cfd0-4783-a71c-d7d0188f2b40_bxhdr4p0a9vjp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>077b41f4-cfd0-4783-a71c-d7d0188f2b40</RegisteredPackageID>
@@ -27,86 +27,86 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-07T18:10:53.101</Modified>
+      <Modified>2024-04-08T14:31:53.756</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\Client2.exe">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\Client2.exe">
       <PackagePath>entrypoint\Client2.exe</PackagePath>
-      <Modified>2024-04-07T18:10:52.503</Modified>
+      <Modified>2024-04-08T14:31:51.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2022-06-10T20:24:12.000</Modified>
+      <Modified>2022-06-10T21:24:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2023-09-30T01:17:28.000</Modified>
+      <Modified>2024-02-21T19:52:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2024-04-07T17:43:11.144</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-21T19:13:07.902</Modified>
+      <Modified>2024-04-08T14:12:42.112</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.904</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.905</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.905</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.906</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.906</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-21T19:13:07.907</Modified>
+      <Modified>2024-04-08T14:12:42.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\Client2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\Client2.xr.xml">
       <PackagePath>Client2.xr.xml</PackagePath>
-      <Modified>2024-04-07T17:43:37.893</Modified>
+      <Modified>2024-04-08T14:12:42.205</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-04-07T18:10:52.434</Modified>
+      <Modified>2024-04-08T14:31:51.231</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-04-07T18:10:52.434</Modified>
+      <Modified>2024-04-08T14:31:51.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2023-09-30T04:03:44.000</Modified>
+      <Modified>2024-02-21T22:46:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-07T17:43:38.420</Modified>
+      <Modified>2024-04-08T14:31:52.201</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jospu\Desktop\PSP V2\Client2\bin\x86\Debug\Core\Client2.exe">
+    <AppxPackagedFile Include="C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client2\bin\x86\Debug\Core\Client2.exe">
       <PackagePath>Client2.exe</PackagePath>
-      <Modified>2024-04-07T18:10:53.097</Modified>
+      <Modified>2024-04-08T14:31:53.741</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

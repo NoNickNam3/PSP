@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\Server.csproj": {}
+    "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\Server.csproj": {
+    "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\Server.csproj",
+        "projectPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\jospu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\obj\\",
+        "outputPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -62,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RQNGWJyxRNvshG5IC5OmF4NTyCJmd3zzfpnrqNNA/8A8z6rpCWFwZpHQhs+TkzLA8cGQWRG+1QicZCMZ1BSnRA==",
+  "dgSpecHash": "xpeQsSpUioXZgovQaLqt02NjpnFt7OkCjD9d+3rltMgmRpWJGtOkZJQSWJKIWHRhyA3g0ZRMt4U4t2dY7rDhAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Server\\Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

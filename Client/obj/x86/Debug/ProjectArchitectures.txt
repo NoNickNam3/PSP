@@ -1,1 +1,1 @@
-C:\Users\jospu\Desktop\PSP V2\Client\Client.csproj;x86
+C:\Users\jospu\Documents\Visual Studio 2022\PSP\Client\Client.csproj;x86

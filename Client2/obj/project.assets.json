@@ -10262,11 +10262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client2\\Client2.csproj",
+      "projectUniqueName": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client2\\Client2.csproj",
       "projectName": "Client2",
-      "projectPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client2\\Client2.csproj",
+      "projectPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client2\\Client2.csproj",
       "packagesPath": "C:\\Users\\jospu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client2\\obj\\",
+      "outputPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10289,6 +10289,11 @@
         "uap10.0.17763": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

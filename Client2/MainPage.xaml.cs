@@ -27,231 +27,237 @@ namespace Client2
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
     public sealed partial class MainPage : Page
-    {
-        private StreamSocket socket = null;
-        private List<String> llTipusCon;
-        private List<String> llUsuaris;
-        public MainPage()
-        {
-            this.InitializeComponent();
-            InitAll();
-            ConectarAsync();
-        }
+	{
+		private StreamSocket socket = null;
+		private List<String> llTipusCon;
+		private List<String> llUsuaris;
+		public MainPage()
+		{
+			this.InitializeComponent();
+			InitAll();
+			ConectarAsync();
+		}
 
-        private async Task ConectarAsync()
-        {
-            if (socket == null || !IsSocketConnected(socket))
-            {
-                socket = new StreamSocket();
-                await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
-                var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
-                DataWriter writer = new DataWriter(socket.OutputStream);
-                writer.WriteString(ConfigurarText("Connexio Realitzada!"));
-                await writer.StoreAsync();
-                writer.DetachStream();
-                writer.Dispose();
-            }
-        }
+		private async Task ConectarAsync()
+		{
+			if (socket == null || !IsSocketConnected(socket))
+			{
+				socket = new StreamSocket();
+				await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
+				var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
+			}
+		}
 
-        private void InitAll()
-        {
-            btnSend.Click += BtnSend_Click;
-            llTipusCon = new List<string> { "DES", "INVENTAT" };
-            cmbTipusConnexio.ItemsSource = llTipusCon;
-            cmbTipusConnexio.SelectedIndex = 0;
-            llUsuaris = new List<string> { "USUARI 1", "USUARI 2", "USUARI 3" };
-            cmbUsers.ItemsSource = llUsuaris;
-            cmbUsers.SelectedIndex = 1;
-        }
+		private void InitAll()
+		{
+			btnSend.Click += BtnSend_Click;
+			llTipusCon = new List<string> { "DES", "INVENTAT" };
+			cmbTipusConnexio.ItemsSource = llTipusCon;
+			cmbTipusConnexio.SelectedIndex = 0;
+			cmbTipusConnexio.IsEnabled = false;
+			llUsuaris = new List<string> { "USUARI 1", "USUARI 2", "USUARI 3" };
+			cmbUsers.ItemsSource = llUsuaris;
+			cmbUsers.SelectedIndex = 0;
+		}
 
-        private async void BtnSend_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (socket == null || !IsSocketConnected(socket))
-                {
-                    socket = new StreamSocket();
-                    await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
-                    var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
-                }
+		private async void BtnSend_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				if (socket == null || !IsSocketConnected(socket))
+				{
+					socket = new StreamSocket();
+					await socket.ConnectAsync(new Windows.Networking.HostName(txbIp.Text), txbPort.Text);
+					var listenTask = ListenForMessagesAsync(socket, new CancellationToken());
+				}
 
-                string message = txbInput.Text;
-                DataWriter writer = new DataWriter(socket.OutputStream);
-                message = ConfigurarText(message);
-                writer.WriteString(message);
-                await writer.StoreAsync();
-                writer.DetachStream();
-                writer.Dispose();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error al conectar con el servidor: {ex.Message}");
-            }
-        }
+				string message = txbInput.Text;
+				DataWriter writer = new DataWriter(socket.OutputStream);
+				message = ConfigurarText(message);
+				writer.WriteString(message);
+				await writer.StoreAsync();
+				writer.DetachStream();
+				writer.Dispose();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Error al conectar con el servidor: {ex.Message}");
+			}
+		}
 
-        private String ConfigurarText(String message)
-        {
-            String user = "";
-            if (cmbUsers.SelectedIndex > -1)
-            {
-                user = cmbUsers.SelectedItem.ToString() + ": ";
-                message = user + message;
-            }
-            else
-            {
-                message = "Anonymous: " + message;
-            }
+		private String ConfigurarText(String message)
+		{
+			String user = "";
+			if (cmbUsers.SelectedIndex > -1)
+			{
+				user = cmbUsers.SelectedItem.ToString() + ": ";
+				message = user + message;
+			}
+			else
+			{
+				message = "Anonymous: " + message;
+			}
 
-            if (cmbTipusConnexio.SelectedIndex > -1)
-            {
-                message = EncriptarMissatge(message);
-            }
-            return message;
-        }
-        private String EncriptarMissatge(String missatge)
-        {
+			if (cmbTipusConnexio.SelectedIndex > -1)
+			{
+				message = EncriptarMissatge(message);
+			}
+			return message;
+		}
 
-            if ("DES".Equals(cmbTipusConnexio.SelectedItem.ToString()))
-            {
-                using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
-                {
-                    des.Key = Encoding.ASCII.GetBytes("12345678");
-                    des.IV = Encoding.ASCII.GetBytes("12345678");
+		private String EncriptarMissatge(String missatge)
+		{
 
-                    using (MemoryStream memoryStream = new MemoryStream())
-                    {
-                        CryptoStream cryptoStream = new CryptoStream(memoryStream, des.CreateEncryptor(), CryptoStreamMode.Write);
-                        byte[] inputBytes = Encoding.UTF8.GetBytes(missatge);
-                        cryptoStream.Write(inputBytes, 0, inputBytes.Length);
-                        cryptoStream.FlushFinalBlock();
-                        missatge = Convert.ToBase64String(memoryStream.ToArray());
-                    }
-                }
+			if ("DES".Equals(cmbTipusConnexio.SelectedItem.ToString()))
+			{
+				using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+				{
+					des.Key = Encoding.ASCII.GetBytes("12345678");
+					des.IV = Encoding.ASCII.GetBytes("12345678");
 
-            }
-            else if ("INVENTAT".Equals(cmbTipusConnexio.SelectedItem.ToString()))
-            {
-                missatge = EncriptacioInventada(missatge);
-            }
+					using (MemoryStream memoryStream = new MemoryStream())
+					{
+						CryptoStream cryptoStream = new CryptoStream(memoryStream, des.CreateEncryptor(), CryptoStreamMode.Write);
+						byte[] inputBytes = Encoding.UTF8.GetBytes(missatge);
+						cryptoStream.Write(inputBytes, 0, inputBytes.Length);
+						cryptoStream.FlushFinalBlock();
+						missatge = Convert.ToBase64String(memoryStream.ToArray());
+					}
+				}
 
-            return missatge;
+			}
+			else if ("INVENTAT".Equals(cmbTipusConnexio.SelectedItem.ToString()))
+			{
+				missatge = EncriptacioInventada(missatge);
+			}
 
-        }
+			return missatge;
 
-        private String EncriptacioInventada(String msg)
-        {
-            String sortida = "";
-            foreach (char c in msg)
-            {
-                sortida += (char)((int)c + 3);
-            }
-            return sortida;
-        }
+		}
 
-        private String DesencriptacioInventada(String msg)
-        {
-            String sortida = "";
-            foreach (char c in msg)
-            {
-                sortida += (char)((int)c - 3);
-            }
-            return sortida;
-        }
+		private String EncriptacioInventada(String msg)
+		{
+			String sortida = "";
+			foreach (char c in msg)
+			{
+				sortida += (char)((int)c + 3);
+			}
+			return sortida;
+		}
 
-        private String DesencriptarMissatge(String missatge)
-        {
-            if (cmbTipusConnexio.SelectedIndex < 0)
-            {
-                return missatge;
-            }
-            if ("DES".Equals(cmbTipusConnexio.SelectedItem.ToString()))
-            {
-                using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
-                {
-                    des.Key = Encoding.ASCII.GetBytes("12345678");
-                    des.IV = Encoding.ASCII.GetBytes("12345678");
+		private String DesencriptacioInventada(String msg)
+		{
+			String sortida = "";
+			foreach (char c in msg)
+			{
+				sortida += (char)((int)c - 3);
+			}
+			return sortida;
+		}
 
-                    using (MemoryStream memoryStream = new MemoryStream())
-                    {
-                        CryptoStream cryptoStream = new CryptoStream(memoryStream,
-                            des.CreateDecryptor(), CryptoStreamMode.Write);
-                        byte[] inputBytes = Convert.FromBase64String(missatge);
-                        cryptoStream.Write(inputBytes, 0, inputBytes.Length);
-                        cryptoStream.FlushFinalBlock();
-                        byte[] decryptedBytes = memoryStream.ToArray();
-                        return Encoding.UTF8.GetString(decryptedBytes, 0, decryptedBytes.Length);
-                    }
-                }
+		private String DesencriptarMissatge(String missatge)
+		{
+			if (cmbTipusConnexio.SelectedIndex < 0)
+			{
+				return missatge;
+			}
+			if (missatge.Contains("MODE"))
+			{
+				cmbTipusConnexio.SelectedIndex = Int32.Parse(missatge.Substring(4));
+				return "";
+			}
+			if ("DES".Equals(cmbTipusConnexio.SelectedItem.ToString()))
+			{
+				using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+				{
+					des.Key = Encoding.ASCII.GetBytes("12345678");
+					des.IV = Encoding.ASCII.GetBytes("12345678");
 
-            }
-            else if ("INVENTAT".Equals(cmbTipusConnexio.SelectedItem.ToString()))
-            {
-                missatge = DesencriptacioInventada(missatge);
-            }
+					using (MemoryStream memoryStream = new MemoryStream())
+					{
+						CryptoStream cryptoStream = new CryptoStream(memoryStream,
+							des.CreateDecryptor(), CryptoStreamMode.Write);
+						byte[] inputBytes = Convert.FromBase64String(missatge);
+						cryptoStream.Write(inputBytes, 0, inputBytes.Length);
+						cryptoStream.FlushFinalBlock();
+						byte[] decryptedBytes = memoryStream.ToArray();
+						return Encoding.UTF8.GetString(decryptedBytes, 0, decryptedBytes.Length);
+					}
+				}
 
-            return missatge;
+			}
+			else if ("INVENTAT".Equals(cmbTipusConnexio.SelectedItem.ToString()))
+			{
+				missatge = DesencriptacioInventada(missatge);
+			}
 
-        }
+			return missatge;
 
-        private bool IsSocketConnected(StreamSocket socket)
-        {
-            return socket != null && (socket.InputStream != null) && (socket.OutputStream != null);
-        }
+		}
 
-        private async Task ListenForMessagesAsync(StreamSocket socket, CancellationToken cancellationToken)
-        {
-            DataReader reader = new DataReader(socket.InputStream)
-            {
-                InputStreamOptions = InputStreamOptions.Partial
-            };
+		private bool IsSocketConnected(StreamSocket socket)
+		{
+			return socket != null && (socket.InputStream != null) && (socket.OutputStream != null);
+		}
 
-            try
-            {
-                while (!cancellationToken.IsCancellationRequested)
-                {
-                    await reader.LoadAsync(sizeof(uint));
-                    if (reader.UnconsumedBufferLength < sizeof(uint))
-                    {
-                        continue;
-                    }
+		private async Task ListenForMessagesAsync(StreamSocket socket, CancellationToken cancellationToken)
+		{
+			DataReader reader = new DataReader(socket.InputStream)
+			{
+				InputStreamOptions = InputStreamOptions.Partial
+			};
 
-                    uint messageSize = reader.ReadUInt32();
-                    await reader.LoadAsync(messageSize);
-                    if (reader.UnconsumedBufferLength < messageSize)
-                    {
-                        continue;
-                    }
+			try
+			{
+				while (!cancellationToken.IsCancellationRequested)
+				{
+					await reader.LoadAsync(sizeof(uint));
+					if (reader.UnconsumedBufferLength < sizeof(uint))
+					{
+						continue;
+					}
 
-                    string message = reader.ReadString(messageSize);
-                    var ignored = Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                    {
+					uint messageSize = reader.ReadUInt32();
+					await reader.LoadAsync(messageSize);
+					if (reader.UnconsumedBufferLength < messageSize)
+					{
+						continue;
+					}
 
-                        if (lvMessages.Items.Count > 5)
-                        {
-                            lvMessages.Items.RemoveAt(0);
-                        }
+					string message = reader.ReadString(messageSize);
+					var ignored = Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+					{
 
-                        lvMessages.Items.Add(DesencriptarMissatge(message));
-                        txbInput.Text = "";
-                    });
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error al leer del socket: {ex.Message}");
-            }
-            finally
-            {
-                reader.Dispose();
-            }
-        }
+						if (lvMessages.Items.Count > 5)
+						{
+							lvMessages.Items.RemoveAt(0);
+						}
+						String msg = DesencriptarMissatge(message);
+						if (!msg.Equals(""))
+						{
+							lvMessages.Items.Add(msg);
+							txbInput.Text = "";
+						}
+						
+					});
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Error al leer del socket: {ex.Message}");
+			}
+			finally
+			{
+				reader.Dispose();
+			}
+		}
 
-        private uint ReverseBytes(uint value)
-        {
-            return (value >> 24) |
-                   ((value << 8) & 0x00FF0000) |
-                   ((value >> 8) & 0x0000FF00) |
-                   (value << 24);
-        }
-    }
+		private uint ReverseBytes(uint value)
+		{
+			return (value >> 24) |
+				   ((value << 8) & 0x00FF0000) |
+				   ((value >> 8) & 0x0000FF00) |
+				   (value << 24);
+		}
+	}
 }

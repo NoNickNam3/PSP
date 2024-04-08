@@ -19,6 +19,7 @@ namespace Server
     {
         public static ObservableCollection<string> LogMessages { get; set; } = new ObservableCollection<string>();
         private static ConcurrentBag<TcpClient> clients = new ConcurrentBag<TcpClient>();
+        private static int mode;
 
         public MainWindow()
         {
@@ -27,6 +28,13 @@ namespace Server
             lvLog.ItemsSource = LogMessages;
             cmbMode.ItemsSource = new List<String>() {"DES", "INVENT" };
             cmbMode.SelectedIndex = 0;
+            mode = 0;
+            cmbMode.SelectionChanged += ModificarMode;
+        }
+
+        private void ModificarMode(object sender, SelectionChangedEventArgs e)
+        {
+            mode = cmbMode.SelectedIndex;
         }
 
         private void StartServer(object sender, RoutedEventArgs e)
@@ -77,7 +85,7 @@ namespace Server
 
             try
             {
-                EnviarResposta("MODE1");
+                EnviarResposta("MODE" + mode);
                 while (true)
                 {
                     if (stream.DataAvailable)

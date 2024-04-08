@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jospu\\Desktop\\PSP V2\\Client\\Client.csproj": {}
+    "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jospu\\Desktop\\PSP V2\\Client\\Client.csproj": {
+    "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\jospu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jospu\\Desktop\\PSP V2\\Client\\obj\\",
+        "outputPath": "C:\\Users\\jospu\\Documents\\Visual Studio 2022\\PSP\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,6 +34,11 @@
           "uap10.0.17763": {
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
