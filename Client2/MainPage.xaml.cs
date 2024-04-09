@@ -57,7 +57,7 @@ namespace Client2
 			cmbTipusConnexio.IsEnabled = false;
 			llUsuaris = new List<string> { "USUARI 1", "USUARI 2", "USUARI 3" };
 			cmbUsers.ItemsSource = llUsuaris;
-			cmbUsers.SelectedIndex = 0;
+			cmbUsers.SelectedIndex = 1;
 		}
 
 		private async void BtnSend_Click(object sender, RoutedEventArgs e)
